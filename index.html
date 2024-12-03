@@ -3,61 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <title>Roisin Loughlin - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: cursive, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
-            background-color: floralwhite
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.4);
             padding: 20px;
+            border-radius: 10px;
         }
+
         h1 {
-            color: #0077cc;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
         }
+
         p {
-            font-size: 25px;
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+            max-width: 600px;
+        }
+
+        a {
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2c3e50;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My First Website!</h1>
-    <p>Hello! This is my first webpage. I'm learning HTML to create websites!</p>
-    <h2> My name's Roisin Loughlin and I'm a website designer </h2>
+    <header>
+        <h1>Hello, I'm Roisin </h1>
+        <p>Welcome to my personal page! I'm a passionate website designer who loves exploring new technologies, solving problems, and creating amazing experiences. Feel free to explore and connect with me.</p>
+        <a href="mailto:roisinloughlin@icloud.com">Get in Touch</a>
+    </header>
+    <footer>
+        &copy; 2024 RL. All rights reserved. I love cats. 
+    </footer>
 </body>
 </html>
-<a href="https://www.google.com">Visit Google</a>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="toggleSection">
-        <h2>More About This Website</h2>
-        <p>This is additional content about my learning journey in web development. I love building new things!</p>
-        <button onclick="toggleContent()">Toggle Content</button>
-    </section>
-    <script>
-        function toggleContent() {
-            const section = document.getElementById('toggleSection');
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
-        }
-    </script>
-    
